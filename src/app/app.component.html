@@ -4,7 +4,7 @@
     <div class="col-md-6">
       <div class='card' *ngFor='let quote of quoteEntry;let i = index'>
           <div class="card-body">
-            <h5> <span class="author">Author</span> <span class="name">{{quote.author}}</span></h5>
+            <h6><span class="Name">{{quote.submittedName}}</span><span class="date">{{quote.date|date}}</span></h6>
             <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
             <button (click) = 'toggleDetail(i)' class="btn btn-dark">Show Quotes</button>
           </div>
