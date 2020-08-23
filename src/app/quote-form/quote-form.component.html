@@ -1,4 +1,4 @@
- <form (ngSubmit)='submitQuotes()' #quotesEntry = 'ngForm'>
+ <form (ngSubmit)='submitQuotes()' #quotesEntry = 'ngForm' quote= form.resetForm({})>
     <div class="form-group">
         <label for="author">Enter Author</label>
         <input type="text" class="form-control" id="author" name="author" placeholder="Enter Author" [(ngModel)]='newQuote.author' #author='ngModel'>
