@@ -2,11 +2,13 @@
   <h3 class='text-center'>QuotesApp</h3>
   <div class="row pt-5">
     <div class="col-md-6">
-      <div *ngFor='let quote of quoteEntry;let i = index'>
-        <h4> Quote  by {{quote.author}}</h4>
-        <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
-        <button (click) = 'toggleDetail(i)'>Show Quotes</button>
-      </div>
+      <div class='card' *ngFor='let quote of quoteEntry;let i = index'>
+          <div class="card-body">
+            <h5> <span class="author">Author</span> <span class="name">{{quote.author}}</span></h5>
+            <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
+            <button (click) = 'toggleDetail(i)' class="btn btn-dark">Show Quotes</button>
+          </div>
+        </div>
     </div>
     <div class="col-md-6">
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
