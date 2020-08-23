@@ -1,3 +1,6 @@
 export class QuotesDetails {
-    constructor(public author:string, public quotes:string,public submittedName:string, public date:Date){}
+    showDetails:boolean;
+    constructor(public author:string, public entryQuote:string,public submittedName:string, public date:Date ,public upVote:number,public downVote:number){
+        this.showDetails = false;
+    }
 }

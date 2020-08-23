@@ -1,1 +1,6 @@
 <h1>QuotesApp</h1>
+<div *ngFor='let quote of quoteEntry;let i = index'>
+  <h3> Quote  by {{quote.author}}</h3>
+  <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
+  <button (click) = 'toggleDetail(i)'>Show Quotes</button>
+</div>
