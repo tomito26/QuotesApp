@@ -1,10 +1,13 @@
 <div class="container">
-  <h3 class='text-center'>QuotesApp</h3>
+  <div class="header">
+    <h3 class='text-center'>QuotesApp</h3>
+    <p>Welcome to QuoteApp where you can share quotes to brighten other people's life.<br> Share positive energy to restore  hope</p>
+  </div>
   <div class="row pt-5">
     <div class="col-md-6">
       <div class='card' *ngFor='let quote of quoteEntry;let i = index'>
           <div class="card-body">
-            <h6><span class="Name">{{quote.submittedName}}</span><span class="date">{{quote.date|date}}</span></h6>
+            <h6><span class="Name">Published by {{quote.submittedName}}</span><span class="date">{{quote.date|date}}</span></h6>
             <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
             <button (click) = 'toggleDetail(i)' class="btn btn-dark">Show Quotes</button>
           </div>
