@@ -1,19 +1,19 @@
- <form>
+ <form (ngSubmit)='submitQuotes()' #quotesEntry = 'ngForm'>
     <div class="form-group">
-        <label for="formGroupExampleInput">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        <label for="author">Enter Author</label>
+        <input type="text" class="form-control" id="author" name="author" placeholder="Enter Author" [(ngModel)]='newQuote.author' #author='ngModel'>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput2">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        <label for="entryQuote">Enter Quote</label>
+        <textarea name="entryQuote" id="entryQuote" class="form-control" rows="5" [(ngModel)] = 'newQuote.entryQuote' #entryQuote='ngModel'></textarea>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        <label for="formGroupExampleInput2">Enter your name:</label>
+        <input type="text" class="form-control" id="submittedName" name="submittedName" placeholder="Enter your name"  [(ngModel)]='newQuote.submittedName' #submittedName = 'ngModel'>
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput2">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        <label for="formGroupExampleInput">Enter Date</label>
+        <input type="date" class="form-control" id="date" name='date' dateplaceholder="Enter Date of submission" [(ngModel)]='newQuote.date' #date='ngModel'>
     </div>
-      
+      <input type="submit" class="btn btn-dark">
 </form>
