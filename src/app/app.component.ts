@@ -22,6 +22,11 @@ export class AppComponent {
   };
 
   addNewQuote(quote){
-    this.quoteEntry.push(quote)
+    let quoteObject = new QuotesDetails(quote.author,quote.entryQuote,quote.submittedName,quote.date)
+    this.quoteEntry.push(quoteObject)
+   
   }
+
+
+
 }
