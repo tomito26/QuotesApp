@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./assets/pexels-snapwire-670061.jpg);
+    background-image:url(./assets/pexels-snapwire-670061.jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
