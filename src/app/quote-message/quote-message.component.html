@@ -1,5 +1,7 @@
 <blockquote class="blockquote">
     <p class="mb-0">{{message.entryQuote}}</p>
     <footer class="blockquote-footer"> {{message.author}}</footer>
-    </blockquote>
+    <i class="far fa-thumbs-down" (click)='upVote()'>{{numberOfLikes}}</i>
+    <i class="far fa-thumbs-down" (click)='downVote()'>{{numberOfDislikes}}</i>
+</blockquote>
     

@@ -14,7 +14,7 @@ export class AppComponent {
     new QuotesDetails('Bill Gates',`Success is lousy teacher.It seduces smart people into thinking they can't lose.`,'Cardine Ambundo',new Date(2020,3,20)),
     new QuotesDetails('Steve Jobs', 'Have the courage to follow your heart and intution.They somehow know what you truly want to become.','Tamminga Budds',new Date(2020,6,15)),
     new QuotesDetails('Mother Teresa','Not all of us can do  reat things.But we can  small things, with great love.','Ian Olindi',new Date(2018,4,1)),
-    new QuotesDetails('Charles Schulz','Just remember once you are over  the hill you begin to pick up spead','Amos Arisi',new Date(2019,4,3))
+    new QuotesDetails('Charles Schulz','Just remember once you are over  the hill you begin to pick up speed','Amos Arisi',new Date(2019,4,3))
   ];
 
   toggleDetail(index){

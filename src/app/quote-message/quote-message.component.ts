@@ -8,7 +8,16 @@ import { QuotesDetails } from '../quotes-details'
 })
 export class QuoteMessageComponent implements OnInit {
   @Input() message:QuotesDetails;
+  numberOfLikes:number =  0;
+  numberOfDislikes:number = 0;
 
+  
+  upVote(){
+    this.numberOfLikes++
+  }
+  downVote(){
+    this.numberOfDislikes++
+  }
   constructor() { }
 
   ngOnInit(): void {
