@@ -5,7 +5,7 @@
   </div>
   <div class="row pt-5">
     <div class="col-md-6">
-      <div class='card' *ngFor='let quote of quoteEntry;let i = index'>
+      <div class='card pb-3' *ngFor='let quote of quoteEntry;let i = index'>
           <div class="card-body">
             <h6><span class="Name">Published by {{quote.submittedName}}</span><span class="date">{{quote.date|date}}</span></h6>
             <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
@@ -13,7 +13,7 @@
           </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 pt-5">
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
     </div>
   </div>
