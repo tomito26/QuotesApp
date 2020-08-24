@@ -1,15 +1,15 @@
  <form (ngSubmit)='submitQuotes(quotesEntry);'  #quotesEntry = 'ngForm' >
     <div class="form-group">
-        <input type="text" class="form-control bg-transparent" id="author" name="author" placeholder="Enter Author" [(ngModel)]='newQuote.author' #author='ngModel'>
+        <input type="text" class="form-control bg-transparent text-white" id="author" name="author" placeholder="Enter Author" [(ngModel)]='newQuote.author' #author='ngModel'>
     </div>
     <div class="form-group">
-        <textarea name="entryQuote" id="entryQuote" class="form-control bg-transparent" rows="5" [(ngModel)] = 'newQuote.entryQuote' #entryQuote='ngModel' placeholder="Enter Quote"></textarea>
+        <textarea name="entryQuote" id="entryQuote" class="form-control bg-transparent text-white" rows="5" [(ngModel)] = 'newQuote.entryQuote' #entryQuote='ngModel' placeholder="Enter Quote"></textarea>
     </div>
     <div class="form-group">
-        <input type="text" class="form-control bg-transparent" id="submittedName" name="submittedName" placeholder="Enter your name"  [(ngModel)]='newQuote.submittedName' #submittedName = 'ngModel'>
+        <input type="text" class="form-control bg-transparent text-white" id="submittedName" name="submittedName" placeholder="Enter your name"  [(ngModel)]='newQuote.submittedName' #submittedName = 'ngModel'>
     </div>
     <div class="form-group">
-        <input type="date" class="form-control bg-transparent" id="date" name='date'  placeholder="Enter Date of submission" [(ngModel)]='newQuote.date' #date='ngModel'>
+        <input type="date" class="form-control bg-transparent text-white" id="date" name='date'  placeholder="Enter Date of submission" [(ngModel)]='newQuote.date' #date='ngModel'>
     </div>
     <input type="submit" class="btn btn-dark">
 
