@@ -2,8 +2,10 @@
     <p class="mb-0">{{message.entryQuote}}</p>
     <footer class="blockquote-footer"> {{message.author}}</footer>
     <div>
-        <i class="far fa-thumbs-up" (click)='upVote()'>{{numberOfLikes}}</i>
-        <i class="far fa-thumbs-down pl-3 " (click)='downVote()'>{{numberOfDislikes}}</i>
+        <i class="far fa-thumbs-up border p-3" (click)='upVote()'></i>{{numberOfLikes}}
+        <i class="far fa-thumbs-down pl-3 border p-3" (click)='downVote()'></i>{{numberOfDislikes}}
+        <i class="far fa-trash-alt pl-3 border p-3" (click)='quoteDelete(true)'></i>
     </div>
+   
 </blockquote>
     

@@ -1,0 +1,8 @@
+/* .far1{
+    border:1px solid black;
+    padding: 3px;
+} */
+.far:hover{
+    background-color: blue;
+    cursor: pointer;
+}

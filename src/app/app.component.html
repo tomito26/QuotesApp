@@ -8,7 +8,7 @@
       <div class='card pb-3' *ngFor='let quote of quoteEntry;let i = index'>
           <div class="card-body">
             <h6><span class="Name">Published by {{quote.submittedName}}</span><span class="date">{{quote.date|date}}</span></h6>
-            <app-quote-message *ngIf='quote.showDetails'  [message]='quote'></app-quote-message>
+            <app-quote-message *ngIf='quote.showDetails'  [message]='quote'  (removeQuote)='removeItem($event,i)'></app-quote-message>
             <button (click) = 'toggleDetail(i)' class="btn btn-dark">Show Quotes</button>
           </div>
         </div>

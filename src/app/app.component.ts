@@ -20,6 +20,15 @@ export class AppComponent {
   toggleDetail(index){
     this.quoteEntry[index].showDetails = !this.quoteEntry[index].showDetails
   };
+  removeItem(removeQuote,index){
+    if(removeQuote){
+      let toDelete = confirm(`Are you sure you want to delete this quote by ${this.quoteEntry[index].author}?`)
+
+      if(toDelete){
+        this.quoteEntry.splice(index,1)
+      }
+    }
+  }
 
   addNewQuote(quote){
     let quoteObject = new QuotesDetails(quote.author,quote.entryQuote,quote.submittedName,quote.date)
